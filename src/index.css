@@ -22,7 +22,7 @@ code {
 }
 
 form {
-  background-color: #f5f5f5;
+  background-color: #fdfdfd;
   padding: 30px;
   margin-top: 60px;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1),
@@ -32,4 +32,22 @@ form {
 form > h3,
 form > button {
   margin: 50px 0;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-color: #212121;
+  box-shadow: none;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
+  color: #212121 !important;
+}
+li > .active {
+  background-color: #1976d2;
 }

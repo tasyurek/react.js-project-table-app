@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const SignedInLinks = () => {
   return (
@@ -8,7 +8,7 @@ const SignedInLinks = () => {
         <NavLink to="/create">New Projects</NavLink>
       </li>
       <li>
-        <NavLink to="/">Sign out</NavLink>
+        <Link to="/">Sign out</Link>
       </li>
       <li>
         <NavLink to="/" className="btn btn-floating blue darken-2 z-depth-0">
