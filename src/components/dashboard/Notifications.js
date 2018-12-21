@@ -1,5 +1,4 @@
 import React from "react";
-import { noConflict } from "q";
 
 const Notifications = () => {
   return (
