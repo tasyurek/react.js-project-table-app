@@ -19,8 +19,8 @@ class CreateProject extends Component {
   render() {
     return (
       <div className="container">
-        <h3>Create new project</h3>
-        <form className="form" onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit}>
+          <h3>Create new project</h3>
           <div className="input-field">
             <input type="text" id="title" onChange={this.handleChange} />
             <label htmlFor="title">Title</label>
@@ -34,9 +34,7 @@ class CreateProject extends Component {
             />
             <label htmlFor="content">Project Content</label>
           </div>
-          <div className="input-field">
-            <button className="btn blue darken-1">Create</button>
-          </div>
+          <button className="btn blue darken-1">Create</button>
         </form>
       </div>
     );
