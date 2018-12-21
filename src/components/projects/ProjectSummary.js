@@ -12,7 +12,7 @@ const ProjectSummary = () => {
         </p>
         <div className="project-summary-info">
           <p>Posted by Onurc</p>
-          <p>December 21, 22:34</p>
+          <p>21 Dec 2018, 22:34</p>
         </div>
       </div>
     </div>
