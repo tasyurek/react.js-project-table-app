@@ -18,6 +18,7 @@ code {
   margin: 30px 0;
   background-color: var(--primary-bc);
   color: white;
+  border-radius: 5px;
 }
 
 .project-summary > .project-summary-info {
@@ -36,6 +37,7 @@ form {
   background-color: var(--primary-bc);
   color: white;
   padding: 30px;
+  border-radius: 5px;
   margin-top: 60px;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1),
     -2px 2px 2px 0 rgba(0, 0, 0, 0.1);
@@ -46,14 +48,19 @@ form > button {
   margin: 50px 0;
 }
 
+input[type="text"],
 input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"],
 input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="password"],
 input[type="password"]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border-color: white;
   box-shadow: none;
+  color: white;
 }
 
+input[type="text"],
 input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label,
 input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
