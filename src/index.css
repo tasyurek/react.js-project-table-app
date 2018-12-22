@@ -62,11 +62,16 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 input[type="text"],
 input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea,
 textarea.materialize-textarea:focus:not([readonly]) + label,
 input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
 input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
   color: white !important;
 }
+.input-field label {
+  color: white;
+}
+
 li > .active {
   background-color: var(--button-color);
 }
