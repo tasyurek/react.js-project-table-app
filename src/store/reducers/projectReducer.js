@@ -1,5 +1,3 @@
-import React from "react";
-
 const initState = {
   projects: [
     {
@@ -22,11 +20,11 @@ const initState = {
 
 const projectReducer = (state = initState, action) => {
   switch (action.type) {
-    case "CREATE_PROJECT":
-      console.log("project created", action.project);
+    case "CREATE_PROJECT_SUCCESS":
+      console.log("project created");
       return state;
     case "CREATE_PROJECT_ERROR":
-      console.log("project created", action.project);
+      console.log("project created failed");
       return state;
     default:
       return state;

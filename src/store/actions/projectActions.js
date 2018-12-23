@@ -1,5 +1,3 @@
-import { firestoreReducer } from "react-redux-firebase";
-
 export const createProject = project => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     //TODO async call to database
@@ -15,10 +13,10 @@ export const createProject = project => {
         createdAt: new Date()
       })
       .then(() => {
-        dispatch({ type: "CREATE_PROJECT", project });
+        dispatch({ type: "CREATE_PROJECT_SUCCESS" });
       })
       .catch(err => {
-        dispatch({ type: "CREATE_PROJECT_ERROE", err });
+        dispatch({ type: "CREATE_PROJECT_ERROR" }, err);
       });
   };
 };
